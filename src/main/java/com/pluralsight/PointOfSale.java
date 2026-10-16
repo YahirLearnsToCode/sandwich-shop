@@ -15,7 +15,7 @@ public class PointOfSale {
                 What size of sandwich would you like?
                 Type 1 for Regular
                 Type 2 for Large
-                 """;
+                """;
         System.out.print(menuChoice);
         int sizeChoice = Integer.parseInt(myScanner.nextLine());
 
@@ -28,12 +28,10 @@ public class PointOfSale {
         int userAge = Integer.parseInt(myScanner.nextLine());
 
         // Calculating discount and printing cost to screen
-        if (userAge <= 17){
-            System.out.printf("Your total is: %.2f", (costOfSandwich - (costOfSandwich * .10)));
-        } else if (userAge >= 65 ) {
-            System.out.printf("Your total is: %.2f", (costOfSandwich - (costOfSandwich * .20)));
-        } else {
-            System.out.println("Your total is: " + costOfSandwich);
-        }
+        if (userAge <= 17) System.out.printf("Your total is: %.2f", (costOfSandwich - (costOfSandwich * .10)));
+
+        else if (userAge >= 65) System.out.printf("Your total is: %.2f", (costOfSandwich - (costOfSandwich * .20)));
+
+        else System.out.println("Your total is: " + costOfSandwich);
     }
 }
