@@ -20,11 +20,8 @@ public class PointOfSale {
         int sizeChoice = Integer.parseInt(myScanner.nextLine());
 
         // assigning value to costOfSandwich
-        if (sizeChoice == 1){
-            costOfSandwich = regularPrice;
-        } else if (sizeChoice == 2) {
-            costOfSandwich = largePrice;
-        }
+        if (sizeChoice == 1) costOfSandwich = regularPrice;
+        else if (sizeChoice == 2) costOfSandwich = largePrice;
 
         // Asking user for their age
         System.out.print("Please enter your age: ");
